@@ -1,0 +1,1 @@
+{"skins":[{"attachments":{"s":{"m":{"type":"mesh","triangles":[2,1,0],"uvs":[0,0,0,0,0,0],"vertices":[1,1,7,7,1,5]}}},"name":"default"}],"skeleton":{"spine":"3.8.55"},"bones":[{"name":"r"}],"slots":[{"attachment":"m","bone":"r","name":"s"}]}

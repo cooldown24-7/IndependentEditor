@@ -1,0 +1,1 @@
+{"skeleton":{"spine":"4.1.17"},"bones":[{"name":"r"}],"slots":[{"name":"s","bone":"r","attachment":"m"}],"skins":[{"name":"default","attachments":{"s":{"m":{"type":"mesh","path":"r","uvs":[0,0,1,0,0,1],"vertices":[0,0,4,0,0,4],"triangles":[0,1,2]}}}}],"animations":{"a":{"bones":{"r":{"translate":[{"curve":[0.5,2,1.5,2,0.5,0,1.5,0]},{"time":2}]}}}}}

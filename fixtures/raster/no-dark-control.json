@@ -1,0 +1,1 @@
+{"skeleton":{"spine":"3.8.55"},"bones":[{"name":"r","x":10,"y":20}],"slots":[{"name":"s","bone":"r","attachment":"m","color":"80ffffff"}],"skins":[{"name":"default","attachments":{"s":{"m":{"type":"mesh","uvs":[0,0,1,0,0,1],"vertices":[0,0,6,-2,0,4],"triangles":[0,1,2]}}}}]}

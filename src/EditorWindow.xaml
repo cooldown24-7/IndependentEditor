@@ -1,0 +1,11 @@
+<Window x:Class="IndependentDev.EditorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:ClassModifier="internal" ThemeMode="Dark"
+        Background="#202124" FontFamily="Segoe UI" FontSize="12">
+    <Window.Resources>
+        <SolidColorBrush x:Key="EditorPanelBrush" Color="#303236" />
+        <SolidColorBrush x:Key="EditorBorderBrush" Color="#45474B" />
+        <SolidColorBrush x:Key="EditorMutedBrush" Color="#AAB0B8" />
+    </Window.Resources>
+</Window>

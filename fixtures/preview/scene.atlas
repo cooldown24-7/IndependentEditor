@@ -1,0 +1,11 @@
+p.png
+size: 1,1
+filter: Linear,Nearest
+repeat: xy
+format: RGBA8888
+r
+xy: 0,0
+size: 1,1
+mesh
+xy: 0,0
+size: 1,1

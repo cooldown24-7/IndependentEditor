@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType><TargetFramework>net10.0-windows</TargetFramework><UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><UseAppHost>true</UseAppHost>
+    <AssemblyName>IndependentEditor</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(SelfContained)' == 'true'">
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+  <ItemGroup><Using Include="System.IO" /></ItemGroup>
+  <ItemGroup>
+    <Content Include="../fixtures/preview/*" Link="fixtures/preview/%(Filename)%(Extension)" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    <Content Include="../README.md" Link="README.md" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    <Content Include="../LICENSE" Link="LICENSE" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    <Reference Include="SkiaSharp"><HintPath>../vendor/SkiaSharp/3.119.4/SkiaSharp.dll</HintPath><Private>true</Private></Reference>
+    <Content Include="../vendor/SkiaSharp/3.119.4/libSkiaSharp.dll" Link="libSkiaSharp.dll" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../vendor/SkiaSharp/3.119.4/LICENSE-managed.txt;../vendor/SkiaSharp/3.119.4/LICENSE-native.txt;../vendor/SkiaSharp/3.119.4/THIRD-PARTY-NOTICES.txt"
+             Link="licenses/SkiaSharp/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+  </ItemGroup>
+</Project>

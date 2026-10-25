@@ -1,0 +1,16 @@
+{
+  "skeleton":{"spine":"3.8.24","independentFixture":true},
+  "unknown":{"keep":"hand authored; no exported assets"},
+  "bones":[{"name":"root","x":10,"y":20,"rotation":90},{"name":"child","parent":"root","x":2}],
+  "slots":[{"name":"body","bone":"root","attachment":"mesh"}],
+  "skins":[{"name":"default","attachments":{"body":{
+    "mesh":{"type":"mesh","uvs":[0,0,1,0,0,1],"triangles":[0,1,2],"vertices":[0,0,4,0,0,4],"unknown":"keep mesh"},
+    "linked":{"type":"linkedmesh","parent":"mesh"}
+  }}}],
+  "animations":{
+    "move":{"bones":{"root":{"translate":[{"x":0,"time":0},{"x":10,"time":2}]}}},
+    "step":{"bones":{"root":{"translate":[{"x":0,"time":0,"curve":"stepped"},{"x":10,"time":2}]}}},
+    "bend":{"deform":{"default":{"body":{"mesh":[{"time":0},{"time":2,"offset":2,"vertices":[2,4]}]}}}},
+    "switch":{"slots":{"body":{"attachment":[{"time":0,"name":"mesh"},{"time":1,"name":null}]}}}
+  }
+}
